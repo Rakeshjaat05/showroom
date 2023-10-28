@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            padding: px;
+        }
+
+        ul li {
+            display: inline;
+            list-style: none;
+            text-align: center;
+            padding-left: 10px;
+
+
+        }
+
+        .col-md-8 {
+            text-align: center;
+            padding: 20px;
+
+
+        }
+
+        .col-md-2 {
+            float: left;
+        }
+
+        .col-md-12 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        form {
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .forms {
+            border-radius: 20px;
+        }
+        .card{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .visit{
+            color:darkred;
+        }
+        .imge2{
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"><img src="data:image/png;base64,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" alt=""></div>
+            <div class=" col-md-8">
+               <h6 class="visit">Visit RS Showroom Ranoli for Unique Dresses</h6>
+               <h5>To Look Smart & handsome</h5>
+            </div>
+            <div class="col-md-2"><img class="imge2" src="data:image/png;base64,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" alt=""></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg-primary">
+                <div class="text">
+                    <h5>BIG OFFER on DIWALI FESTIVAL <br>
+                        </h5>
+                        <h6>RS SHOWROOM</h6>
+                        <h5>mr.rohit & mr.karan</h5>
+                    <p>we handle your messy legalities and tax filings <br>
+                        so that you worry less and focus more on your dream</p>
+
+
+
+                </div>
+                <div class="forms bg-white">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                           
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Phone No.</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                       
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>ALL SERVICES</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row bg-light">
+            <div class="col-md-4 col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special shirts</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Formal dresses</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Genses and t-shirts</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</body>
+
+</html>
